@@ -1,0 +1,29 @@
+{
+  "name": "request-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "Request Header Parser Microservice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaMorris/request-header-parser-microservice.git"
+  },
+  "keywords": [
+    "Microservice",
+    "express",
+    "node"
+  ],
+  "author": "Joshua Morris <me@joshuamorris.info>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoshuaMorris/request-header-parser-microservice/issues"
+  },
+  "homepage": "https://github.com/JoshuaMorris/request-header-parser-microservice#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "helmet": "^2.1.2",
+    "marked": "^0.3.6"
+  }
+}
