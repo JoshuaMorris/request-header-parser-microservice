@@ -28,6 +28,10 @@ app.get('/api/whoami/', function(req, res) {
     res.end();
 });
 
+app.get('/LICENSE', function(req, res) {
+    res.render('license', {title: 'Request Header Parser Microservice', md: md});
+});
+
 app.get('/', function(req, res) {
     res.render('index', {title: 'Request Header Parser Microservice', md: md});
 });
