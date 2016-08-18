@@ -3,15 +3,10 @@ var express = require('express'),
     marked = require('marked'),
     fs = require('fs'),
     app = express(),
-    port = process.env.PORT || 8080;
-    
-var md = function(filename) {
-    var path = __dirname + '/' + filename,
-        include = fs.readFileSync(__dirname + '/README.md', 'utf8'),
-        html = marked(include);
-
-    return html;
-};
+    port = process.env.PORT || 8080,
+    md = function(filename) {
+        return marked(fs.readFileSync(__dirname + '/' + filename, 'utf8'));
+    };
     
 app.use(helmet());
 app.set('view engine', 'pug');
